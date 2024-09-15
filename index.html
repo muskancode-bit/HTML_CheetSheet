@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>HTML Cheatsheet by Muskan</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="copy.png" alt=""></span>
+        <div class="content center">
+            This HTML Cheatsheet for Python Programs 
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <p style="font-size: 20px; font-family: 'Arial Narrow Bold', sans-serif;">Python Programs for practice:</p></b>
+            <li>Write a program that asks the user for his name and then welcome
+                him. The output should look like this :
+                Enter your name: Muskan Hello Muskan
+                <pre class="language-python"><code>name = input('Enter your name: ') 
+print('Hello', name)
+
+Output:
+Enter your name: Muskan 
+Hello Muskan
+</code></pre>
+            </li> 
+
+            <li>Write a program that prompts the user to enter two integers 
+                and display the total on the screen.
+                <pre class="language-js"><code>num1 = int(input("Enter first number: ")) 
+num2 = int(input("Enter second number: "))
+sum = num1 + num2
+print("Sum is", sum)
+
+Output:
+Enter first number: 67 
+Enter second number: 98
+Sum is 165
+</code></pre>
+            </li> 
+
+            <li>Write a program that prompts the user to input a Celsius temperature and outputs the equivalent temperature in Fahrenheit. The formula to convert the temperature is: F = 9/5 C + 32 where F is the Fahrenheit temperature and C is the Celsius temperature.
+                <pre class="language-js"><code>celsius = float(input("Enter the temperature 
+in celcius: "))fahrenheit = (9/5 * celsius )+ 32
+ print("Temperature in fahrenheit:", fahrenheit)
+
+Output:Enter the temperature in celcius: 36.8
+Temperature in fahrenheit: 98.24</code></pre>
+            </li> 
+
+            <li>Write a program which accept principle, rate and time from user and print the simple interest. The formula to calculate simple interest is: simple interest = principle x rate x time / 100
+                <pre class="language-js"><code>principle = float(input("Enter principle amount: "))
+rate = float(input("Enter interest rate: "))
+time = float(input("Enter time(years): "))
+simple_interest= principle*rate*time/100
+print("Simple interest of ",principle," over a time period 
+of",time,"years is",simple_interest)
+
+Enter principle amount: 5400 
+Enter interest rate: 8
+Enter time(years): 3
+Simple interest of 5400.0 over a time period of 3.0 years is 1296.0
+</code></pre>
+            </li> 
+
+            <li>Write a program that accepts seconds from keyboard as integer. Your program should converts seconds in hours, minutes and seconds.
+                <pre class="language-js"><code>seconds = int(input('Enter seconds: '))
+hours = seconds // 3600
+minutes = (seconds % 3600) // 60 
+seconds = seconds % 60
+print('Hours:', hours) 
+print('Minutes:', minutes) 
+print('Seconds:', seconds)
+
+Output:
+Enter seconds: 13400
+Hours: 3
+Minutes: 43
+Seconds: 20
+</code></pre>
+            </li>
+
+            <li>Write a program that prompts the user to enter number in two variables and Swap the contents of the variables.
+                <pre class="language-js"><code>num1 = int(input("Enter first number: ")) 
+num2 = int(input("Enter second number: "))
+temp = num1 
+num1 = num2
+num2 = temp
+print("After swapping, first number is ",num1," and second number is ",num2)
+
+Output:
+Enter first number: 10
+Enter second number: 15
+After swapping, first number is 15 and second number is 10
+</code></pre>
+            </li>
+            
+            <li>Write a program that prompts the user to enter number in two variables and Swap the contents of the variables.(Do not declare extra variable.)
+                <pre class="language-js"><code>num1=int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num1 = num1 + num2
+num2 = num1 - num2
+num1 = num1 - num2
+print("After swapping, first number is ",num1," and second number is ",num2)
+                
+Outpot:
+first number:10
+Enter Enter second number: 16
+After swapping, first number is 16 and second number is 10
+
+</code></pre>
+            </li> 
+            
+            <li>8.	Write a program that prompts the user to input the radius of a circle and outputs the area and circumference of the circle. The formula is
+                Area = pi x radius2 Circumference = 2 x pi x radius
+                
+                <pre class="language-js"><code>radius= float(input("Enter radius of circle: "))
+area = 3.14*radius**2
+circumference = 2*3.14*radius
+print("Area of circle:",area) print("circumference of circle:",circumference)
+
+Output:
+Enter radius of circle: 3.4 
+Area of circle: 36.2984
+circumference of circle: 21.352</code></pre>
+            </li> 
+
+            <li>Write a program that prompts the user to input the length and the width of a rectangle and outputs the area and circumference of the rectangle. The formula is
+Area = Length x Width
+Circumference = 2 x ( Length + Width-)
+<pre class="language-js"><code>length = float(input("Enter length of rectangle: "))
+width = float(input("Enter width of rectangle: "))
+area = length*width 
+circumference = 2*(length+width)
+print("Area of rectangle: ",area)
+print("Circumference of rectangle: ",circumference)
+    
+Output:
+Enter length of rectangle: 15 
+Enter width of rectangle: 9 
+Area of rectangle: 135.0
+Circumference of rectangle: 48.0
+</code></pre>
+            </li> 
+
+            <li>Write a program which prompts the user to input principle, rate and time and calculate compound interest. The formula is : CI = P(1+R/100)^T - P.
+                <pre class="language-js"><code>principle = int(input("Enter principle amount: "))
+rate = int(input("Enter interest rate: "))
+time = int(input("Enter time(years): "))
+ci= principle * pow((1 + rate / 100), time) - principle 
+print("Compound interest is: ",ci)
+                     
+Output:
+Enter principle amount: 5400 
+Enter interest rate: 8
+Enter time(years): 3
+Compound interest is: 1402.4448000000011
+</code></pre>
+            </li> 
+            
+        </ol>
+    </div>
+</body>
+
+</html>
